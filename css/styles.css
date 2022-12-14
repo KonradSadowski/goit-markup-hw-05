@@ -107,7 +107,7 @@ header {
   fill: var(--light-blue);
 }
 
-/* Header----------------------------------------------------------------------------------------------- */
+/* Header-END----------------------------------------------------------------------------------------------- */
 
 /* BUY SECTION------------------------------------------------------------------------------------- */
 .offer {
@@ -154,8 +154,52 @@ header {
   margin: 0;
 }
 
-/* BUY SECTION------------------------------------------------------------------------------------- */
+/* BUY SECTION-END------------------------------------------------------------------------------------ */
+/* MODAL-WINDOW------------------------------------------------------------------------------------- */
 
+.backdrop {
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal-content {
+  background-color: var(--text-white);
+  height: 581px;
+  width: 528px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.offer button:nth-child(1) {
+  background-color: var(--text-white);
+  color: var(--logo-black);
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0000001a;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* MODAL-WINDOW-END------------------------------------------------------------------------------------ */
 /* lorem ipsum ------------------------------------------------------------------------------------------- */
 .articles {
   list-style: none;
