@@ -27,7 +27,11 @@ body {
 .section {
   padding: 94px 0;
 }
-
+:hover,
+:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
 svg {
   vertical-align: middle;
 }
@@ -77,6 +81,7 @@ header {
   color: var(--main-black);
   letter-spacing: 0.02em;
 }
+
 .menu-list li a:hover,
 .menu-list li a:focus {
   color: var(--light-blue);
@@ -237,7 +242,7 @@ header {
   letter-spacing: 0.03em;
   margin: 0;
 }
-/* lorem ipsum ------------------------------------------------------------------------------------------- */
+/* lorem ipsum END------------------------------------------------------------------------------------------- */
 
 /* our-range---------------------------------------------------------------------------------------------------- */
 .our-range {
@@ -255,6 +260,30 @@ header {
 .our-range-images {
   display: flex;
   gap: 30px;
+}
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.box p {
+  margin: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 0px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-white);
+
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  width: 100%;
 }
 /* our-range---------------------------------------------------------------------------------------------------- */
 
